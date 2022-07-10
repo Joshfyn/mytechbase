@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.10 on darwin)" generated="20220710 20:24:59.621" rpa="false" schemaversion="2">
+<suite id="s1" name="Facebook Login" source="/Users/joshuaadeegbe/Documents/MYTechBase/python_classes/automation_robot/facebook_login.robot">
+<test id="s1-t1" name="Login Using An Invalid Email Addresss">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${facebook_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220710 20:24:59.853" level="INFO">Opening browser 'ff' to base url 'https://www.facebook.com'.</msg>
+<msg timestamp="20220710 20:24:59.855" level="INFO">Firefox driver log is always forced to to: /Users/joshuaadeegbe/Documents/MYTechBase/python_classes/automation_robot/geckodriver-5.log</msg>
+<status status="PASS" starttime="20220710 20:24:59.853" endtime="20220710 20:25:05.792"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_or_phone_address_field}</arg>
+<arg>${valid_email_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:05.794" level="INFO">Typing text 'joshuaadeegbe@yahoo.com' into text field '//input[@name='email' and @data-testid='royal_email']'.</msg>
+<status status="PASS" starttime="20220710 20:25:05.793" endtime="20220710 20:25:05.895"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:05.896" level="INFO">Typing text 'mytechbase' into text field '//input[@id='pass' and @placeholder='Password']'.</msg>
+<status status="PASS" starttime="20220710 20:25:05.895" endtime="20220710 20:25:05.945"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:05.946" level="INFO">Clicking button '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220710 20:25:05.945" endtime="20220710 20:25:12.401"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${login_unsuuccesful_message}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220710 20:25:12.401" endtime="20220710 20:25:12.409"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${login_unsuuccesful}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220710 20:25:12.409" endtime="20220710 20:25:12.433"/>
+</kw>
+<doc>Verifies that user cannot login using an invalid email address</doc>
+<status status="PASS" starttime="20220710 20:24:59.852" endtime="20220710 20:25:12.433"/>
+</test>
+<test id="s1-t2" name="Login using an invalid phone number">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${facebook_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220710 20:25:12.440" level="INFO">Opening url 'https://www.facebook.com'</msg>
+<status status="PASS" starttime="20220710 20:25:12.437" endtime="20220710 20:25:15.401"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_or_phone_address_field}</arg>
+<arg>${invalid_phone_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:15.402" level="INFO">Typing text '4795' into text field '//input[@name='email' and @data-testid='royal_email']'.</msg>
+<status status="PASS" starttime="20220710 20:25:15.402" endtime="20220710 20:25:15.445"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:15.445" level="INFO">Typing text 'mytechbase' into text field '//input[@id='pass' and @placeholder='Password']'.</msg>
+<status status="PASS" starttime="20220710 20:25:15.445" endtime="20220710 20:25:15.485"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220710 20:25:15.486" level="INFO">Clicking button '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220710 20:25:15.486" endtime="20220710 20:25:18.687"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${login_unsuuccesful_message}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220710 20:25:18.687" endtime="20220710 20:25:18.705"/>
+</kw>
+<doc>Verifies that user cannot login using an invalid phone number</doc>
+<status status="PASS" starttime="20220710 20:25:12.434" endtime="20220710 20:25:18.705"/>
+</test>
+<doc>Verifies user facbook login</doc>
+<status status="PASS" starttime="20220710 20:24:59.622" endtime="20220710 20:25:18.706"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Facebook Login">Facebook Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
