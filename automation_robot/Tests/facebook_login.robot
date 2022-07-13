@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Test Suite to verify facbook login
 Library           SeleniumLibrary
-Resource          ../Pages/facebook_login.resource
+Resource          ../Pages/facebook_login.robot
 
 *** Test Cases ***
 Login Using An Invalid Email Addresss
