@@ -1,0 +1,8 @@
+# Locators
+email_or_phone_address_field:     //input[@name='email' and @data-testid='royal_email']
+password_field:                   //input[@id='pass' and @placeholder='Password']
+login_button:                     //button[@type="submit"]
+login_unsuuccesful:               //*[@id="loginform"]/div[2]/div[2]/a
+
+# URLs
+facebook_URL:                    https://www.facebook.com
