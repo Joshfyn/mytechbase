@@ -5,4 +5,13 @@ login_button:                     //button[@type="submit"]
 login_unsuuccesful:               //*[@id="loginform"]/div[2]/div[2]/a
 
 # URLs
-facebook_URL:                    https://www.facebook.com
+facebook_URL:                     https://www.facebook.com
+browser:                          ff
+
+# Variables
+login_unsuuccesful_message:       The password that you've entered is incorrect.
+invalid_email_address:            femdav2003@yahoo.ca
+valid_password:                  mytechbase
+valid_phone_number:               +35844984795
+invalid_phone_number:             4795
+invalid_password:                 my
