@@ -1,0 +1,10 @@
+
+browser:        firefox
+migri_url:      "https://migri.vihta.com/public/migri/#/reservation"
+
+
+# LOCATORS
+language_dropdown:   "//a[@id= 'language-selector-toggle-1']/strong[@class='caret']"
+language:             "//span[@class='ng-scope' and @data-translate='l10n.languages.en' and text() = 'In English']"
+book_appointment_button:    "//a[@class='btn btn-primary btn-lg']/span[@class='ng-scope']"
+choose_category_button:     "//button[@id='vihta-selector-button_134'and @class='btn btn-default dropdown-toggle']/span[@class='selected-value pull-left ng-binding']"

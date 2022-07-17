@@ -1,27 +1,15 @@
+Launch Browser
+Go To Migri URl
+
 First Test case
-Login using Valid email address
-Step 1: Go To Facebook Login
-Step 2: Input valid email address in the email address field
-Step 3: Input a valid password
-Step4 : Click on submit
+Book Appointment With Available Time Checked as True
+Change Language to English
+Click Book Now
+Verify That  are on the "For One Person Page"
+select booking category
+select service category
+select office
+check "view available times per day"
 
 Second Test case
-Login using an invalid email addresss
-Step 1: Go To Facebook Login
-Step 2: Input invalid email address in the email address field (tech.com)
-Step 3: Input a valid password
-Step 4 : Click on submit
-
-Third Test case
-Login using a valid phone number
-Step 1: Go To Facebook Login
-Step 2: Input valid phone number in the phone number field (+35844984795)
-Step 3: Input a valid password
-Step 4 : Click on submit
-
-Fourth Test case
-Login using an invalid phone number
-Step 1: Go To Facebook Login
-Step 2: Input valid phone number in the phone number field (+35844)
-Step 3: Input a valid password
-Step 4 : Click on submit
+uncheck "view available times per day"
